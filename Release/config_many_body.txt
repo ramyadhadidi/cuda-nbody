@@ -1,0 +1,18 @@
+*: This Mark Shows a Comment Line "*:"
+*: All User Typings Must be in Lower case
+*:
+*:
+CSVFileName:
+RandomAssignment:yes
+G:3.3639e-20
+BodySize:512
+TotalIterationCPU:5000
+TotalIterationGPU:5000
+DistanceReducingFactor:1
+TimeStep:1
+EPS2:1e-2
+RandomSpaceDimension:100
+AllBodyWeights:1
+IterationBeforeGL:100
+CUDATileSize:128
+StepsToWriteFile:1

@@ -1,0 +1,55 @@
+﻿Build started 03/05/2014 14:56:35.
+     1>Project "C:\Users\RamyadHadidi\documents\visual studio 2010\Projects\Nbody\Nbody\Nbody.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Nbody.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D_MBCS /I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v5.0\common\inc" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include" /I. /FIcuda_runtime.h /c "C:\Users\RamyadHadidi\documents\visual studio 2010\Projects\Nbody\Nbody\kernel.cu" 
+       AddCudaCompilePropsDeps:
+       Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\RamyadHadidi\AppData\Local\Temp\tmp66e37d9c3f2449bcb0cf366e16e81e18.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v5.0\common\inc" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include"  -G   --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -g   -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o "Debug\kernel.cu.obj" "C:\Users\RamyadHadidi\documents\visual studio 2010\Projects\Nbody\Nbody\kernel.cu"
+         
+         C:\Users\RamyadHadidi\documents\visual studio 2010\Projects\Nbody\Nbody>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\ProgramData\NVIDIA Corporation\CUDA Samples\v5.0\common\inc" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include"  -G   --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -g   -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o "Debug\kernel.cu.obj" "C:\Users\RamyadHadidi\documents\visual studio 2010\Projects\Nbody\Nbody\kernel.cu" 
+         kernel.cu
+     1>C:/Users/RamyadHadidi/documents/visual studio 2010/Projects/Nbody/Nbody/kernel.cu(486): warning : variable "z" was declared but never referenced
+         
+         tmpxft_00008b98_00000000-2_kernel.cudafe1.gpu
+         tmpxft_00008b98_00000000-7_kernel.cudafe2.gpu
+         kernel.cu
+     1>C:/Users/RamyadHadidi/documents/visual studio 2010/Projects/Nbody/Nbody/kernel.cu(486): warning : variable "z" was declared but never referenced
+         
+         tmpxft_00008b98_00000000-2_kernel.cudafe1.cpp
+         tmpxft_00008b98_00000000-12_kernel.ii
+         Note: including lib: glut32.lib
+         
+     1>C:/Users/RamyadHadidi/documents/visual studio 2010/Projects/Nbody/Nbody/kernel.cu(486): warning C4101: 'z' : unreferenced local variable
+         Deleting file "tmpxft_00008b98_00000000-8_kernel.cpp3.o".
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\RamyadHadidi\documents\visual studio 2010\Projects\Nbody\Debug\Nbody.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Nbody.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\RamyadHadidi\documents\visual studio 2010\Projects\Nbody\Debug\Nbody.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\RamyadHadidi\documents\visual studio 2010\Projects\Nbody\Debug\Nbody.lib" /MACHINE:X86 Debug\kernel.cu.obj
+         Debug\Nbody.exe.embed.manifest.res
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Nbody.exe.embed.manifest" /manifest Debug\Nbody.exe.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         Nbody.vcxproj -> C:\Users\RamyadHadidi\documents\visual studio 2010\Projects\Nbody\Debug\Nbody.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\cudart*.dll" "C:\Users\RamyadHadidi\documents\visual studio 2010\Projects\Nbody\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\cudart*.dll" "C:\Users\RamyadHadidi\documents\visual studio 2010\Projects\Nbody\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\cudart*.dll" "C:\Users\RamyadHadidi\documents\visual studio 2010\Projects\Nbody\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\cudart32_50_35.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\cudart64_50_35.dll
+                 2 file(s) copied.
+       FinalizeBuildStatus:
+         Deleting file "Debug\Nbody.unsuccessfulbuild".
+         Touching "Debug\Nbody.lastbuildstate".
+     1>Done Building Project "C:\Users\RamyadHadidi\documents\visual studio 2010\Projects\Nbody\Nbody\Nbody.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:09.41

@@ -1,0 +1,7 @@
+Model: 		 GeForce GTX 560 Ti
+IRQ:   		 16
+Video BIOS: 	 ??.??.??.??.??
+Card Type: 	 PCI-E
+DMA Size: 	 40 bits
+DMA Mask: 	 0xffffffffff
+Bus Location: 	 0000:01.00.0
